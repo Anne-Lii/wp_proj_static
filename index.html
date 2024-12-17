@@ -5,18 +5,55 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" sizes="32x32" href="media/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="media/favicon-16x16.png">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="css/main.css">
     <script src="js/main.js" defer></script>
     <title>Oas SPA | Startsida</title>
 </head>
 <body>
     <header>
-        <img src="media/logotyp_oas.png" alt="logotyp" id="logotyp">
-
+        <a href="index.html"><img src="media/logotyp_oas.png" alt="logotyp" id="logotyp"></a>
+        <nav>
+            <ul class="main_nav">
+                <li><a href="">SPA</a></li>
+                <li><a href="">Mat & Dryck</a></li>
+                <li><a href="">Boende</a></li>
+                <li><a href="">Om oss</a></li>
+            </ul>
+        </nav>
+        <div class="icon_wrapper">
+            <img src="media/search.png" alt="search" id="search">
+            <img src="media/cart.png" alt="cart" id="cart">
+        </div>
     </header>
+    
     <main>
-        <h1>Startsidan</h1>
-
+        <div class="banner">
+            <video autoplay muted loop class="video-banner">
+                <source src="media/videobanner_1.mp4" type="video/mp4">
+                Din webbläsare stödjer inte videoelementet.
+            </video>
+        </div>
+        <div class="search_date">
+            <form >
+                <!-- Ankomstdatum -->
+                <div class="input-group">
+                    <label for="arrival-date">Ankomstdatum:</label><br>
+                    <input type="date" id="arrival-date" name="arrival-date">
+                </div>
+        
+                <!-- gäster och rum -->
+                <div class="input-group">
+                    <label for="room">Antal rum och gäster:</label><br>
+                    <input type="text" id="room" name="room" placeholder="1 rum, 2 gäster">
+                </div>
+                <button id="search_dateandroom">SÖK</button>
+            </form>
+        </div>
+        <div class="welcome">
+            <img src="media/leafs.png" alt="golden leafs" id="golden_leafs">
+        </div>
     </main>
     <footer>
 
