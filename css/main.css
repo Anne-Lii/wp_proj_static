@@ -16,8 +16,7 @@ body {
 header {
     width: 100%;
     height: 100px;
-    background-color: #8F7868;
- 
+    background-color: #8F7868; 
     display: flex; 
     align-items: center;
     justify-content: space-between;
@@ -79,6 +78,7 @@ main {
     flex: 1;
 }
 
+/*Startsidan*/
 .video-banner {
     width: 100%;
     height: auto;  
@@ -130,9 +130,136 @@ main {
     padding-top: 100px;  
 }
 
+.welcome {
+    width: 90%;
+    max-width: 800px;
+    margin: auto;
+    color: #48433B;
+}
+
+h1 {
+    color: #48433B;
+    text-align: center;
+    font-size: 32px;
+    padding-top: 20px;
+}
+
+.article_wrapper {
+    width: 100%; 
+    max-width: 800px;
+    margin: auto;
+}
+
+.article_wrapper article {     
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%; 
+    max-width: 800px;
+    margin: 20px auto;
+    border: 1px solid #8F7868;
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px grey;
+    padding: 10px;
+}
+
+.article_wrapper article h2 {
+    font-size: 24px;
+    color: #48433B;
+    text-align: center;
+}
+
+.article_wrapper article p{
+    font-size: 20px;
+    color: #48433B;
+    padding-left: 20px;
+}
+
+.article_wrapper article ul{
+    list-style: circle;
+    color: #48433B;
+}
+
+
+.article_wrapper article img {
+    width: 50%; 
+    max-width: 400px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px grey;
+}
+
+.article_wrapper article .content {
+    flex: 1; 
+}
+
+.price {
+    padding: 0 0 0 20px;
+}
+
+.booking_btn {
+    background-color: white;
+    border: solid 1px #8F7868;
+    padding: 3px 40px ;
+    border-radius: 5px;
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+    margin-left: 200px;
+    color: #48433B;
+}
+
 /*FOOTER*/
 footer {
     width: 100%;
     height: 300px;
     background-color: #8F7868;
+}
+
+@media (max-width: 900px) {
+    .main_nav li a{
+      font-size: 24px;
+    }
+
+    .main_nav li::after {
+        top: 2px;
+        font-size: 20px;
+    }
+
+}
+
+@media (max-width: 800px) {
+    .main_nav li a{
+      font-size: 20px;
+    }
+
+    .main_nav li::after {
+        top: -4px;
+    }
+
+}
+
+@media (max-width: 700px) {
+    .main_nav li a{
+      font-size: 16px;
+    }
+
+    .main_nav li::after {
+        top: -4px;
+    }
+
+}
+
+@media (max-width: 630px) {
+    .main_nav li a{
+        display: none;
+    }
+
+    .main_nav li::after {
+        content: "";
+    }
+
+    .icon_wrapper {
+        display: none;
+        
+    }
+
 }
